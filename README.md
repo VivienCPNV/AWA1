@@ -54,7 +54,7 @@ After that visit [http://localhost:8080](http://localhost:8080/)
 ## Integration
 This project only includes the basic html/css/js for this specific
 component. You're free to use this repo to integrate this component
-on your website. An example of integration was provided in the [releases](https://github.com/VivienCPNV/AWA1/releases/latest).
+on your website. An example of integration was provided in the [releases](https://github.com/VivienCPNV/AWA1/releases/tag/latest).
 To run this example, download it, extract it somewhere and run the following commands:
 ```shell
 $ cd /path/to/container/folder
