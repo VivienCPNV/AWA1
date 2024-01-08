@@ -25,6 +25,32 @@ will connect to said IRC through a websocket and will handle the communication w
 In order for this project to make sense in the AWA1 module context, this chat,
 will make heavy use of animations, svg effects, text effects, and the like.
 
+## Running the project
+### Prerequisites
+    - An internet connection
+    - A php installation
+### Running the project
+Running this project is very simple, it is a simple static html page.
+To do so open a terminal and type the following commands:
+```shell
+$ cd /path/to/container/folder
+$ git clone git@github.com:VivienCPNV/AWA1.git
+$ cd AWA1
+$ php -S localhost:8080
+```
+After that visit [http://localhost:8080](http://localhost:8080/)
+## Directory structure
+```
+├───css                     // CSS files of the project
+│   └───images              // Images needed for jquery-ui
+├───img                     // Other images used by the project           
+└───js                      // All the scripts needed by the project
+    ├───anime.min.js        // Anime js used for animations
+    ├───index.js            // Main js file handles setting up the page
+    ├───jquery-ui.min.js    // Jquery-UI for draggable and resizable window
+    ├───jquery.min.js       // Jquery
+    └───parser.js           // Parser for IRC messages
+```
 ## TODO
 - [x] Foldable chat
 - [x] Persistent through page changes
