@@ -58,8 +58,7 @@ on your website. An example of integration was provided in the [releases](https:
 To run this example, download it, extract it somewhere and run the following commands:
 ```shell
 $ cd /path/to/container/folder
-$ npm install
-$ npm run server
+$ php -S localhost:4000
 ```
 After that visit [http://localhost:4000](http://localhost:4000)
 ## TODO
