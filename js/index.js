@@ -83,6 +83,11 @@ $(function() {
     catch (e) {
         console.error(e);
     }
+
+    /**
+     * This adds messages to the chatbox every 3 seconds
+     */
+    var interval = setInterval(()=>appendMessage("127.0.0.1", "PRIVMSG", "test-user", makeRandomCharString(Math.floor(Math.random() * (100 - 20) + 20))), 3000)
 })
 
 /**
@@ -152,7 +157,7 @@ function observerCallback(mutationList, observer) {
  */
 function makeRandomCharString(length) {
     let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ';
     const charactersLength = characters.length;
     let counter = 0;
     while (counter < length) {
