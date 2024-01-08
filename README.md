@@ -3,15 +3,15 @@ An IRC web client
 
 ## Idea
 The idea is to make a web component, this component would be a foldable chat box
-peoples would be presented with a hovering button that once clicked would open a
-dragable window (web dragable window, not a seperate tab). This window would contain the basic chat features, such as :
+people would be presented with a hovering button that once clicked would open a
+dragable window (web dragable window, not a separate tab). This window would contain the basic chat features, such as :
 - Chat history
 - Username controls
 - Chat input
 - Formatter helper (maybe, it's probably not supported by the IRC protocol)
 - Emoji input
 
-Also, this chatbox would persist through page changes, allowing the use to browse the website all the while chatting with peoples.
+Also, this chatbox would persist through page changes, allowing the user to browse the website all the while chatting with people.
 
 ### Theme
 This web client would follow the visual theme of the following [HEXO theme](https://github.com/Yue-plus/hexo-theme-arknights).
@@ -22,7 +22,7 @@ This will be handled by an [IRC server](https://www.inspircd.org/). The client
 will connect to said IRC through a websocket and will handle the communication with the server.
 
 ### Animations
-In order for this project to make sense in the AWA1 module context, this chat,
+For this project to make sense in the AWA1 module context, this chat,
 will make heavy use of animations, svg effects, text effects, and the like.
 
 ## Running the project
@@ -51,7 +51,18 @@ After that visit [http://localhost:8080](http://localhost:8080/)
     ├───jquery.min.js       // Jquery
     └───parser.js           // Parser for IRC messages
 ```
+## Integration
+This project only includes the basic html/css/js for this specific
+component. You're free to use this repo to integrate this component
+on your website. An example of integration was provided in the [releases](https://github.com/VivienCPNV/AWA1/releases/latest).
+To run this example, download it, extract it somewhere and run the following commands:
+```shell
+$ cd /path/to/container/folder
+$ npm install
+$ npm run server
+```
+After that visit [http://localhost:4000](http://localhost:4000)
 ## TODO
 - [x] Foldable chat
 - [x] Persistent through page changes
-- [x] Popup dragable window
+- [x] Popup draggable window
