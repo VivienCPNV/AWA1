@@ -24,6 +24,9 @@ will connect to said IRC through a websocket and will handle the communication w
 ### Animations
 For this project to make sense in the AWA1 module context, this chat,
 will make heavy use of animations, svg effects, text effects, and the like.
+The following libraries were used to make the animations:
+- [AnimeJS](https://animejs.com/)
+- [JqueryUI](https://jqueryui.com/)
 
 ## Running the project
 ### Prerequisites
@@ -64,4 +67,5 @@ After that visit [http://localhost:4000](http://localhost:4000)
 ## TODO
 - [x] Foldable chat
 - [x] Persistent through page changes
-- [x] Popup draggable window
+- [x] Popup draggable window (in browser)
+- [ ] Popup browser window
